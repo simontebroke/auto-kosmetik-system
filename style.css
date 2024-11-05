@@ -38,13 +38,18 @@ header a {
 #home {
   display: grid;
   position: relative;
-  background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.35) 37%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0) 0%), url(auto.jpg);
+  background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.35) 37%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0) 0%), url(auto2.jpg);
   background-repeat: no-repeat;
   padding: 5%;
   background-size: cover;
   background-position: center;
   padding: 5vw;
   height: 75vh;
+}
+#home h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8d8d8d;
 }
 #home .heading {
   position: absolute;
