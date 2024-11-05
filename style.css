@@ -38,18 +38,13 @@ header a {
 #home {
   display: grid;
   position: relative;
-  background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.35) 37%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0) 0%), url(auto2.jpg);
+  background-image: url(autobg.png);
   background-repeat: no-repeat;
   padding: 5%;
   background-size: cover;
   background-position: center;
   padding: 5vw;
   height: 75vh;
-}
-#home h6 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #8d8d8d;
 }
 #home .heading {
   position: absolute;
@@ -85,6 +80,13 @@ header a {
   color: white;
   display: flex;
   flex-direction: column;
+}
+#home .content h6 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: left;
+  margin-bottom: 9px;
 }
 #home .content .content-grid {
   display: grid;
@@ -123,9 +125,10 @@ header a {
 #home .buttons-container {
   margin-top: 9px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 15px;
-  grid-template-areas: "reservieren lieferando speisekarte";
+  grid-template-areas: "reservieren  speisekarte";
+  gap: 12px;
   position: relative;
 }
 #home .buttons-container button {
@@ -148,23 +151,22 @@ header a {
 #home .buttons-container .btn1:hover {
   background-color: rgba(240, 240, 240, 0.9450980392);
 }
+#home .buttons-container .reserve {
+  background-color: #007af5;
+  border: 1px solid #007af5;
+}
+#home .buttons-container .reserve p {
+  color: #fff;
+}
+#home .buttons-container .reserve:hover {
+  background-color: #0074e8;
+}
 #home .buttons-container p {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-align: center;
   color: #222222;
-}
-#home .buttons-container .lieferbtn {
-  margin: 0px 5px 0px 12.5px;
-  display: flex;
-  cursor: pointer;
-  background-color: #ff8000;
-  border: none;
-  transition: all 0.2s ease;
-}
-#home .buttons-container .lieferbtn:hover {
-  background-color: #f07800;
 }
 
 .reserve {
@@ -261,7 +263,7 @@ header a {
     margin-left: 42px;
   }
   #home {
-    background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, transparent 0%, #000, #000), url(altbg.jpg);
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, transparent 0%, #000, #000), url(automobile.png);
     padding: 0;
     justify-items: center;
     align-items: end;
@@ -292,13 +294,11 @@ header a {
   }
   #home .buttons-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "reservieren speisekarte" "lieferando lieferando";
   }
   #home .content .buttons-container .reserve p {
     display: none;
   }
   #home .content .buttons-container .reserve {
-    margin-right: 12.5px;
     margin-bottom: 10px;
   }
   #home .content .buttons-container .menu {
