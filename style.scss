@@ -180,6 +180,60 @@ header {
   }
 }
 
+#aboutSection {
+  margin: 32px 0 0 12%;
+
+  hr {
+    border: none; /* Remove default border */
+    height: 1px; /* Set the height of the line */
+    background-color: #d2d2d7; /* Set the background color */
+    margin: 18px 0; /* Optional: Adjust margins as needed */
+    margin: 18px 12% 0 0;
+  }
+
+  h5 {
+    color: #252525;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 21.48px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-shrink: 0;
+    overflow: scroll;
+    .aboutButton {
+      width: 304px;
+      height: 145px;
+      background-color: #fff;
+      padding: 16px 18px;
+      border-radius: 15px;
+      h5 {
+        margin-bottom: 5px;
+      }
+      h6 {
+        color: #7f7f7f;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        text-align: left;
+      }
+      p {
+        padding: 0 0 0 3px;
+        color: #7f7f7f;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin-top: 9px;
+      }
+    }
+  }
+}
+
 .reserve {
   grid-area: reservieren;
 }
